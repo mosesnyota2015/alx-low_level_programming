@@ -1,4 +1,12 @@
-#ifndef MY_HEADER_H
-#define MY_HEADER_H
-void print_alphabet(void);
-#endif
+#include <unistd.h>
+
+/**
+ * print_alphabet prints the letters of the 
+ * alphabet
+ */
+
+int print_alphabet(void)
+{
+    char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
+    return (write(1, alphabet, 26));
+}
