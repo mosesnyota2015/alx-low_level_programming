@@ -1,21 +1,19 @@
 #include "main.h"
-
 /**
- * main - Print "_putchar" followed by a new line.
- * Description: not allowed to use starndard libs.
- * Return: 0
+ *main - Entry point
+ *
+ *Return: nothing, return void
  */
-
 int main(void)
 {
-	char toprint[] = "_putchar";
-	int i = 0;
-
-	while (toprint[i] != '\0')
-	{
-		_putchar(toprint[i]);
-		i++;
-	}
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
 	_putchar('\n');
 
 	return (0);
