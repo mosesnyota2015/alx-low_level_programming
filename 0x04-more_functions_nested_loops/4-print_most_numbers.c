@@ -1,28 +1,21 @@
-#include "holberton.h"
+/*
+ * File: 4-print_most_numbers.c
+ */
+
+#include "main.h"
 
 /**
-  * print_most_numbers - Print the numbers since 0 up to 9
-  *
-  * Description: Prints the numbers excluding 2 and 4
-  *
-  * Return: The numbers since 0 up to 9
-  */
+ * print_most_numbers - Prints the numbers from 0-9 except for 2 and 4.
+ */
 void print_most_numbers(void)
 {
-	int x = 0;
+	int num;
 
-	for (; x <= 9; x++)
+	for (num = 0; num <= 9; num++)
 	{
-		if (x == 2 || x == 4)
-		{
-			continue;
-		}
-		else
-		{
-			_putchar(x + '0');
-		}
+		if (num != 2 && num != 4)
+			_putchar((num % 10) + '0');
 	}
 
 	_putchar('\n');
 }
-
