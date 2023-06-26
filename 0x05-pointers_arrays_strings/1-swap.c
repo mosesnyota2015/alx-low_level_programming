@@ -15,6 +15,6 @@ int val_a, val_b;
 val_a = *a;
 val_b = *b;
 
-*a = val_a;
-*b = val_b;
+*a = val_b;
+*b = val_a;
 }
