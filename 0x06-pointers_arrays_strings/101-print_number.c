@@ -1,14 +1,5 @@
 #include "main.h"
 
-/**
- * _putchar - prints an integer.
- * @c: input char.
- * Return: no return.
- */
-void _putchar(char c)
-{
-putchar(c);
-}
 
 /**
  * print_number - prints an integer.
